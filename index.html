@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>teleplank - Tools across boundaries</title>
+    <meta name="description" content="teleplank builds tools that cross boundaries. telepipe lets AI agents access runtime. teledrop moves files anywhere.">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <h1 class="logo">teleplank</h1>
+            <p class="tagline">Tools across boundaries</p>
+            <div class="manifesto">
+                <p>Every boundary is an opportunity.</p>
+                <p>Every restriction reveals a gap.</p>
+                <p>Every gap needs a bridge.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- telepipe Product -->
+    <section class="product">
+        <div class="container">
+            <div class="product-header">
+                <span class="badge badge-new">New</span>
+                <h2>telepipe</h2>
+                <p class="subtitle">Agents meet runtime</p>
+            </div>
+
+            <div class="problem-solution">
+                <div class="problem">
+                    <h3>The Boundary</h3>
+                    <!-- Desktop version -->
+                    <div class="ascii desktop-ascii">
+<pre>
+┌─────────────────────┐         ┌─────────────────────┐
+│  Claude / Codex     │    ✗    │  Your Runtime       │
+│                     │         │                     │
+│  "I think this      │         │  lldb, node, python │
+│   code works..."    │         │  websocat, curl     │
+│                     │         │                     │
+│  Assumes. Guesses.  │         │  Truth lives here.  │
+└─────────────────────┘         └─────────────────────┘
+</pre>
+                    </div>
+                    <!-- Mobile version -->
+                    <div class="ascii mobile-ascii">
+<pre>
+┌─────────────────┐
+│ Claude / Codex  │
+│                 │
+│ "I think this   │
+│  code works..." │
+│                 │
+│ Assumes.        │
+│ Guesses.        │
+└─────────────────┘
+        ✗
+┌─────────────────┐
+│ Your Runtime    │
+│                 │
+│ lldb, node      │
+│ websocat, curl  │
+│                 │
+│ Truth lives     │
+│ here.           │
+└─────────────────┘
+</pre>
+                    </div>
+                    <p class="boundary-text">
+                        AI agents generate code at superhuman speed.
+                        But they've never watched it run.
+                    </p>
+                    <p class="boundary-text">
+                        The runtime—where code executes, where errors surface,
+                        where results materialize—is a black box they can't open.
+                    </p>
+                </div>
+
+                <div class="solution">
+                    <h3>The Bridge</h3>
+                    <!-- Desktop version -->
+                    <div class="ascii desktop-ascii">
+<pre>
+┌─────────────────────┐  stdio  ┌─────────────────────┐
+│  Claude / Codex     │ ━━━━━━→ │  Your Runtime       │
+│                     │         │                     │
+│  "Let me check      │telepipe │  lldb, websocat     │
+│   the actual        │         │  postman, psql      │
+│   debugger..."      │   ✓     │                     │
+└─────────────────────┘         └─────────────────────┘
+</pre>
+                    </div>
+                    <!-- Mobile version -->
+                    <div class="ascii mobile-ascii">
+<pre>
+┌─────────────────┐
+│ Claude / Codex  │
+│                 │
+│ "Let me check   │
+│  the actual     │
+│  debugger..."   │
+└─────────────────┘
+        │
+    telepipe
+        │
+        ↓
+┌─────────────────┐
+│ Your Runtime    │
+│                 │
+│ lldb, websocat  │
+│ postman, psql   │
+│       ✓         │
+└─────────────────┘
+</pre>
+                    </div>
+                    <p class="bridge-text">
+                        Claude, GPT, Copilot—they speak code fluently. With Telepipe,
+                        they speak runtime.
+                    </p>
+                    <p class="bridge-text">
+
+                        stdio becomes the bridge. curl, psql, websocat, lldb, Chrome DevTools—
+                        every tool with stdin/stdout becomes an agent's portal. No more
+                        guessing. No more assumptions. Claude reads debugger output like
+                        you read text. Queries databases. Inspects browser state. Live.
+                    </p>
+                    <p class="bridge-text">
+                        Your agent doesn't imagine the runtime. It enters it.
+                    </p>
+                </div>
+            </div>
+
+            <div class="features">
+                <div class="feature">
+                    <h4>🔌 Runtime access</h4>
+                    <p>
+                        Agents read real stdout. Actual debugger traces. Live database results. Direct.
+                        No hallucinations. Just facts.
+                    </p>
+                </div>
+                <div class="feature">
+                    <h4>🌊 stdio is the API</h4>
+                    <p>
+                        Stop copy-pasting debugger output to your agent.<br>
+                        Stop describing SQL results in chat.<br>
+                        Stop transcribing runtime errors.
+
+                    </p>
+                    <p>
+                        If it speaks stdio, your agent controls it directly.
+                        lldb, psql, curl, websocat—the tools you've been
+                        manually bridging for years. Now connected.
+                    </p>
+                </div>
+                <div class="feature">
+                    <h4>🧪 Test what you write</h4>
+                    <p>
+                        Agent writes a function → runs it → reads the error →
+                        fixes the bug → runs again → verifies it works.
+
+                    </p>
+                    <p>
+                        You just say "fix the login flow." It does. Shows you the proof.
+                        That's real help.
+                    </p>
+                </div>
+                <div class="feature">
+                    <h4>🛠️ Your toolkit, agent-powered</h4>
+                    <p>
+                        Symbolic breakpoints. Conditional watchpoints. SQL EXPLAIN plans.
+                        Chrome DevTools Protocol. Memory inspectors. Network traces.
+                    </p>
+                    <p>
+                        The power tools you reach for when things get hard?
+                        Your agent uses them now. On its own.
+                    </p>
+                </div>
+            </div>
+
+            <div class="usage">
+                <h3>Usage</h3>
+                <div class="code-block">
+                    <pre><code>
+# Debug a crashed process
+telepipe redirect xcode -- lldb ./myiosapp
+telepipe exec xcode
+> bt  # Agent reads full backtrace
+> frame variable  # Inspects local state
+
+# Control Chrome for UI testing
+telepipe redirect chrome -- websocat ws://localhost:9222
+telepipe exec chrome
+> {"method":"Page.captureScreenshot"}  # Agent sees what you see
+                    </code></pre>
+                </div>
+                <p class="usage-note">
+                    stdio over TCP. Professional tools, agent-accessible. No wrappers, no APIs—just pipes.
+                </p>
+            </div>
+
+            <div class="cta">
+                <a href="https://www.npmjs.com/package/telepipe" class="btn primary">View on npm</a>
+                <a href="https://github.com/teleplank/telepipe" class="btn secondary">View on GitHub</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- teledrop Product -->
+    <section class="product">
+        <div class="container">
+            <div class="product-header">
+                <span class="badge">Available Now</span>
+                <h2>teledrop</h2>
+                <p class="subtitle">File transport that works everywhere</p>
+            </div>
+
+            <div class="problem-solution">
+                <div class="problem">
+                    <h3>The Boundary</h3>
+                    <!-- Desktop version -->
+                    <div class="ascii desktop-ascii">
+<pre>
+┌─────────────────┐        ┌─────────────────┐
+│   Work          │   ✗    │   Home          │
+│   (locked down) │        │   (unrestricted)│
+│                 │        │                 │
+│   • No email    │        │   Need files    │
+│   • No VPN      │        │   from work     │
+│   • No USB      │        │                 │
+└─────────────────┘        └─────────────────┘
+</pre>
+                    </div>
+                    <!-- Mobile version -->
+                    <div class="ascii mobile-ascii">
+<pre>
+┌───────────────┐
+│ Work          │
+│ (locked down) │
+│               │
+│ • No email    │
+│ • No VPN      │
+│ • No USB      │
+└───────────────┘
+       ✗
+┌───────────────┐
+│ Home          │
+│ (unrestricted)│
+│               │
+│ Need files    │
+│ from work     │
+└───────────────┘
+</pre>
+                    </div>
+                </div>
+
+                <div class="solution">
+                    <h3>The Bridge</h3>
+                    <!-- Desktop version -->
+                    <div class="ascii desktop-ascii">
+<pre>
+┌─────────────────┐        ┌─────────────────┐
+│   Work          │  ━━━━→ │   Home          │
+│                 │        │                 │
+│  teledrop       │ GitHub │  teledrop       │
+│  "my phrase"    │releases│  "my phrase"    │
+│  ./files        │  ✓     │  → files appear │
+└─────────────────┘        └─────────────────┘
+</pre>
+                    </div>
+                    <!-- Mobile version -->
+                    <div class="ascii mobile-ascii">
+<pre>
+┌───────────────┐
+│ Work          │
+│ teledrop      │
+│ "my phrase"   │
+│ ./files       │
+└───────────────┘
+       │
+       ↓
+  GitHub ✓
+       │
+       ↓
+┌───────────────┐
+│ Home          │
+│ teledrop      │
+│ "my phrase"   │
+│ files appear  │
+└───────────────┘
+</pre>
+                    </div>
+                </div>
+            </div>
+
+            <div class="features">
+                <div class="feature">
+                    <h4>🔐 Encrypted by default</h4>
+                    <p>AES-256-CBC. Your mnemonic is the key.</p>
+                </div>
+                <div class="feature">
+                    <h4>🌍 Works everywhere</h4>
+                    <p>If you can reach GitHub, you can use teledrop.</p>
+                </div>
+                <div class="feature">
+                    <h4>🧠 One phrase</h4>
+                    <p>Same mnemonic to push and pull. No IDs to remember.</p>
+                </div>
+                <div class="feature">
+                    <h4>💪 Manual fallback</h4>
+                    <p>When npx is blocked, use browser + bash function.</p>
+                </div>
+            </div>
+
+            <div class="usage">
+                <h3>Usage</h3>
+                <div class="code-block">
+                    <pre><code># Push files
+npx teledrop "coffee table alpha" ./myproject
+
+# Pull them back
+npx teledrop "coffee table alpha"</code></pre>
+                </div>
+                <p class="usage-note">That's it. One mnemonic. Any number of files. GitHub releases as transport.</p>
+            </div>
+
+            <div class="cta">
+                <a href="https://www.npmjs.com/package/teledrop" class="btn primary">View on npm</a>
+                <a href="https://github.com/teleplank/teledrop" class="btn secondary">View on GitHub</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Philosophy -->
+    <section class="philosophy">
+        <div class="container">
+            <h2>The Philosophy</h2>
+            <div class="philosophy-grid">
+                <div class="philosophy-card">
+                    <h3>Boundaries are bridges waiting to happen</h3>
+                    <p>AI agents can't see runtime. Corporate networks block everything. Every restriction reveals a gap. Every gap is an opportunity.</p>
+                </div>
+                <div class="philosophy-card">
+                    <h3>Use what's already there</h3>
+                    <p>stdio has worked since 1970. GitHub releases reach everywhere. We don't invent new infrastructure. We connect existing tools.</p>
+                </div>
+                <div class="philosophy-card">
+                    <h3>Complexity is a bug</h3>
+                    <p>One pipe. One phrase. One mental model. If the tool requires a manual, we failed.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <h3>teleplank</h3>
+                    <p>Tools across boundaries</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Products</h4>
+                    <ul>
+                        <li><a href="https://www.npmjs.com/package/telepipe">telepipe</a></li>
+                        <li><a href="https://www.npmjs.com/package/teledrop">teledrop</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Resources</h4>
+                    <ul>
+                        <li><a href="https://github.com/teleplank">GitHub</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 teleplank. MIT License.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
